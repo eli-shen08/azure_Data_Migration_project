@@ -15,3 +15,38 @@ It demonstrates how data can be migrated from Azure SQL Database, stored in Azur
 
 3.🥇 Gold Layer — Business-ready data containing fact, dimension, and aggregated tables.
 
+**1. First I have created dummy schema and five tables in Azure SQL Database.**
+The sql queries can be found -> [sql_queries.sql](sql_queries.sql)
+
+**2. Next let us go through the Pipeline that I've created in Synapse**
+![Pipeline](pics/fullPipe.png)
+- First I've used the **Lookup activity** to get table and shema names. The query can be found -> [sql_query_for_lookup_activity.sql](sql_query_for_lookup_activity.sql)
+  ![Lookup query](pics/lookup_query.png)
+
+- Second I've used the **For Each** activity
+  1. Inside First I've used the **Copy Data activity**. this copies the table from source to ADLS
+     
+  ![forEach.png](pics/forEach.png)
+
+  After this I had to create an  database and an External data source on the ADLS container. 
+
+  2. Then i've used the **Look Up & Script** activity to count the records from source and the sink
+  3. Finally I've used **IF Condition** activity to check if the count from both activities are same, if not I have chosen to Fail the Pipeline
+
+  **After this the structure in ADLS looks like**
+  
+  migration/
+  |
+  |--bronze/
+        |
+        |--migration/
+              |-- Accounts/
+              |        |--Accounts.parquet
+              |--Customers/
+              |        |--Customers.parquet 
+              |--Loans/
+              |        |--Loans.parquet
+              |--Payments/
+              |        |--Payments.parquet
+              |--Transactions/
+              |        |--Transactions.parquet
