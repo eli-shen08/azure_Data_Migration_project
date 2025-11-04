@@ -66,15 +66,15 @@ The sql queries can be found -> [sql_queries.sql](sql_queries.sql)
     &emsp;|<br/>
     &emsp;|--migration/<br/>
     &emsp;&emsp;&emsp;|-- Accounts/<br/>
-          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Accounts.parquet<br/>
+    &emsp;&emsp;&emsp;|&emsp;&emsp;|--Accounts.parquet<br/>
     &emsp;&emsp;&emsp;|--Customers/<br/>
-          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Customers.parquet<br/>
+    &emsp;&emsp;&emsp;|&emsp;&emsp;|--Customers.parquet<br/>
     &emsp;&emsp;&emsp;|--Loans/<br/>
-          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Loans.parquet<br/>
+    &emsp;&emsp;&emsp;|&emsp;&emsp;|--Loans.parquet<br/>
     &emsp;&emsp;&emsp;|--Payments/<br/>
-          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Payments.parquet<br/>
+    &emsp;&emsp;&emsp;|&emsp;&emsp;|--Payments.parquet<br/>
     &emsp;&emsp;&emsp;|--Transactions/<br/>
-          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Transactions.parquet
+    &emsp;&emsp;&emsp;|&emsp;&emsp;|--Transactions.parquet
 
 
 **3. Finally I have added 2 Pyspark notebooks for bronze to silver and silver to gold layer transformation**
