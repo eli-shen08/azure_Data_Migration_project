@@ -82,7 +82,11 @@ The note-books can be found below :
 1. [bronzeToSilver.ipynb](bronzeToSilver.ipynb)
 2. [silverToGold.ipynb](silverToGold.ipynb)
 
-**After the Pipeline has run successfully the structure of the contailes looks like this.**
+**After successful run**
+
+![run](pics/successful_run.png)
+
+**After the Pipeline has run successfully the structure of the container looks like this.**
 
 ![container](pics/container.png)
 
@@ -110,10 +114,10 @@ The gold layer contains
 
 This project demonstrates a Azure Synapse Pipeline built for Data Migration intergrated with medallion Architecture ensuring data quality, validation, and parallel processing.
 
-BY RAHUL MONDAL
-[LINKEDIN](https://www.linkedin.com/in/rahul-mondal08/)
-You can check out video [here]()
-EMAIL - mondal.rahul1999@gmail.com
+BY RAHUL MONDAL <br/>
+[LINKEDIN](https://www.linkedin.com/in/rahul-mondal08/)<br/>
+You can check out video [here]()<br/>
+EMAIL - mondal.rahul1999@gmail.com<br/>
 
 
 
