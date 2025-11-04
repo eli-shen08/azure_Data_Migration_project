@@ -116,7 +116,7 @@ This project demonstrates a Azure Synapse Pipeline built for Data Migration inte
 
 BY RAHUL MONDAL <br/>
 [LINKEDIN](https://www.linkedin.com/in/rahul-mondal08/)<br/>
-You can check out video [here]()<br/>
+You can check out video [here](https://www.linkedin.com/posts/rahul-mondal08_azure-azuredataengineer-pyspark-activity-7391593811380039680-c-aD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD7SvPEBnRDCQRQtqP9ijHIkwsG9Z5eecsA)<br/>
 EMAIL - mondal.rahul1999@gmail.com<br/>
 
 
