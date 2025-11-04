@@ -35,18 +35,21 @@ The sql queries can be found -> [sql_queries.sql](sql_queries.sql)
 
   **After this the structure in ADLS looks like**
   
-  migration/
-  |
-  |--bronze/
-        |
-        |--migration/
-              |-- Accounts/
-              |        |--Accounts.parquet
-              |--Customers/
-              |        |--Customers.parquet 
-              |--Loans/
-              |        |--Loans.parquet
-              |--Payments/
-              |        |--Payments.parquet
-              |--Transactions/
-              |        |--Transactions.parquet
+  migration/<br/>
+  |<br/>
+  |--bronze/<br/>
+    &emsp;|<br/>
+    &emsp;|--migration/<br/>
+    &emsp;&emsp;&emsp;|-- Accounts/<br/>
+          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Accounts.parquet<br/>
+    &emsp;&emsp;&emsp;|--Customers/<br/>
+          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Customers.parquet<br/>
+    &emsp;&emsp;&emsp;|--Loans/<br/>
+          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Loans.parquet<br/>
+    &emsp;&emsp;&emsp;|--Payments/<br/>
+          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Payments.parquet<br/>
+    &emsp;&emsp;&emsp;|--Transactions/<br/>
+          &emsp;&emsp;&emsp;&emsp;&emsp;  |--Transactions.parquet
+
+
+
