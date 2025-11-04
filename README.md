@@ -8,6 +8,31 @@
 This project showcases a data migration and transformation pipeline integrated with **Medallion Architecture (Bronze → Silver → Gold)** built on the Azure Synapse, for scalable and structured data processing.
 It demonstrates how data can be migrated from Azure SQL Database, stored in Azure Data Lake Storage (ADLS) with **sanity check** (count check), and then transformed into **Medallion Architecture** — ensuring data quality, validation, and parallel processing.
 
+## 🧮 Pipeline Workflow
+
+**Migrate & Load to Bronze:**
+
+  - Copy activity pulls data from Azure SQL tables
+
+  - Parallel copy for all 5 tables
+
+  - Row-count validation ensures data completeness
+
+**Transform Bronze → Silver:**
+
+  - Notebook 1 runs automatically
+
+  - Cleans data and processes and validates data 
+
+**Transform Silver → Gold:**
+
+  - Notebook 2 generates fact, dimension, and aggregated data
+
+  - Ready for analytics consumption
+
+
+
+
 ## 🏗️ Architecture Overview
 1.🥉 Bronze Layer — Raw data migrated directly from source (Azure SQL Database).
 
@@ -50,6 +75,49 @@ The sql queries can be found -> [sql_queries.sql](sql_queries.sql)
           &emsp;&emsp;&emsp;&emsp;&emsp;  |--Payments.parquet<br/>
     &emsp;&emsp;&emsp;|--Transactions/<br/>
           &emsp;&emsp;&emsp;&emsp;&emsp;  |--Transactions.parquet
+
+
+**3. Finally I have added 2 Pyspark notebooks for bronze to silver and silver to gold layer transformation**
+The note-books can be found below :
+1. [bronzeToSilver.ipynb](bronzeToSilver.ipynb)
+2. [silverToGold.ipynb](silverToGold.ipynb)
+
+**After the Pipeline has run successfully the structure of the contailes looks like this.**
+
+![container](pics/container.png)
+
+The silver layer contains
+
+![silver](pics/silver.png)
+
+The gold layer contains
+
+![gold](pics/gold.png)
+
+## 🧠 Tech Stack
+
+- Azure Synapse Analytics
+
+- Azure SQL Database
+
+- Azure Data Lake Storage Gen2
+
+- Azure Notebook (PySpark)
+
+- ADLS
+
+## Conclusion
+
+This project demonstrates a Azure Synapse Pipeline built for Data Migration intergrated with medallion Architecture ensuring data quality, validation, and parallel processing.
+
+BY RAHUL MONDAL
+[LINKEDIN](https://www.linkedin.com/in/rahul-mondal08/)
+You can check out video [here]()
+EMAIL - mondal.rahul1999@gmail.com
+
+
+
+
 
 
 
