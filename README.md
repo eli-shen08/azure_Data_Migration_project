@@ -22,7 +22,7 @@ It demonstrates how data can be migrated from Azure SQL Database, stored in Azur
 
   - Notebook 1 runs automatically
 
-  - Cleans data and processes and validates data 
+  - Cleans data and processes and validates data and stores in **Delta** format.
 
 **Transform Silver → Gold:**
 
